@@ -1,0 +1,32 @@
+# Start Docker
+sudo systemctl start docker
+
+# Run OWASP Juice Shop
+sudo docker run -d -p 3000:3000 bkimminich/juice-shop
+
+# Verify Container
+sudo docker ps
+
+# Open Application
+http://localhost:3000
+
+# Launch OWASP ZAP
+zaproxy
+
+# Stop Container
+sudo docker stop <container_id>
+
+# Start Existing Container
+sudo docker start <container_id>
+
+# Remove Container
+sudo docker rm <container_id>
+
+# List Docker Images
+sudo docker images
+
+# View Running Containers
+sudo docker ps
+
+# View All Containers
+sudo docker ps -a
